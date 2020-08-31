@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(20, 20, 20);
+}
+.list{
+    margin-top: 5px;
+    margin-left: 5%;
+}
+.list li{
+    color: #ededed;
+    font-family: "Calibri";
+    font-size: 20px;
+}
+a{
+    color: #6a8cf3;
+    font-size: 20px;
+    font-family: "Calibri";
+}

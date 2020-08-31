@@ -15,3 +15,12 @@ a{
     font-size: 20px;
     font-family: "Calibri";
 }
+
+
+.description{
+    color: #ededed;
+    font-family: "Calibri";
+    font-size: 25px;
+    margin: 0%;
+    margin-left: 5%;
+}

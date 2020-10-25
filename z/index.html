@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru,en">
+<head>
+    <title>задание</title>
+</head>
+<body>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <p class="stext">
+        uses GraphABC;<br>
+        begin<br>
+        &nbsp;&nbsp;SetWindowSize(320, 340);<br>
+          <br>
+          &nbsp;&nbsp;var n: integer; write('введите кол-во отверстий до 8: '); read(n);<br>
+          <br>
+          &nbsp;&nbsp;SetBrushColor(clGray); Circle(160, 170, 150);<br>
+          &nbsp;&nbsp;SetBrushColor(clWhite); Circle(160, 170, 50);<br>
+          <br>
+          &nbsp;&nbsp;for var i:=0 to n-1 do begin<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;var deg := 45*i;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;var x := 160 + 100*cos(deg*pi/180);<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;var y := 170 - 100*sin(deg*pi/180);<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;SetBrushColor(clWhite); Circle(Round(x),Round(y), 30);<br>
+          &nbsp;&nbsp;end;<br>
+        end.<br>
+    </p>
+</body>
+</html>

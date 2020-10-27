@@ -7,28 +7,28 @@
     <link rel="stylesheet" href="../css/style.css">
 
     <p class="stext">
-        uses GraphABC;
-        var n, x, y: integer;
-        var deg: real;
-        begin
-        &nbsp;&nbsp;SetWindowSize(320, 340);
-          
-        &nbsp;&nbsp;write('введите кол-во отверстий до 8: ');
-        &nbsp;&nbsp;read(n);
-          
-        &nbsp;&nbsp;SetBrushColor(clGray);
-        &nbsp;&nbsp;Circle(160, 170, 150);
-        &nbsp;&nbsp;SetBrushColor(clWhite);
-        &nbsp;&nbsp;Circle(160, 170, 50);
-          
-        &nbsp;&nbsp;for var i:=0 to n-1 do begin
-        &nbsp;&nbsp;&nbsp;&nbsp;deg := -(360/n*i)+90;
-        &nbsp;&nbsp;&nbsp;&nbsp;x := Ceil(160 + 100*cos(deg*pi/180));
-        &nbsp;&nbsp;&nbsp;&nbsp;y := Ceil(170 - 100*sin(deg*pi/180));
-        &nbsp;&nbsp;&nbsp;&nbsp;SetBrushColor(clWhite);
-        &nbsp;&nbsp;&nbsp;&nbsp;Circle(x,y, 30);
-        &nbsp;&nbsp;end;
-        end.
+        uses GraphABC;<br>
+        var n, x, y: integer;<br>
+        var deg: real;<br>
+        begin<br>
+        &nbsp;&nbsp;SetWindowSize(320, 340);<br>
+        <br>
+        &nbsp;&nbsp;write('введите кол-во отверстий до 8: ');<br>
+        &nbsp;&nbsp;read(n);<br>
+        <br>
+        &nbsp;&nbsp;SetBrushColor(clGray);<br>
+        &nbsp;&nbsp;Circle(160, 170, 150);<br>
+        &nbsp;&nbsp;SetBrushColor(clWhite);<br>
+        &nbsp;&nbsp;Circle(160, 170, 50);<br>
+        <br>
+        &nbsp;&nbsp;for var i:=0 to n-1 do begin<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;deg := -(360/n*i)+90;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;x := Ceil(160 + 100*cos(deg*pi/180));<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;y := Ceil(170 - 100*sin(deg*pi/180));<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;SetBrushColor(clWhite);<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;Circle(x,y, 30);<br>
+        &nbsp;&nbsp;end;<br>
+        end.<br>
     </p>
 </body>
 </html>
